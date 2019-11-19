@@ -2,19 +2,18 @@ package palindrom;
 
 import static org.junit.Assert.*;
 
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.Test;
 
-
-public class palindromTest {
-//my 1st commit_Atheena
-	@BeforeClass
+public class TestCase2 {
 	public static void beforeClass(){
-		System.out.println("Before PalindromTest.class");
+		System.out.println("Before PalindromTest2.class");
 	}
 	@AfterClass
 	
 	public static void AfterClass(){
-		System.out.println("After PalindromTest.class");
+		System.out.println("After PalindromTest2.class");
 	}
 	@Before
 	public  void initTest(){
@@ -29,4 +28,10 @@ public class palindromTest {
 		for(int i=0;i<100;i++)
 		assertFalse(test.isPal(i));
 	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
 }
